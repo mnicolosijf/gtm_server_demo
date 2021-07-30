@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+ 
+
+    <title>GTM Server-Side Demo</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
+
+    <!-- Custom styles for this template -->
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TMVN5QL');</script>
+    <!-- End Google Tag Manager -->
+    
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">            
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>GTM Server-Side Demo</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container"><br>
+          <h1 class="jumbotron-heading">Send Data to GTMs</h1>
+          <p>
+            <a href="#" id="send-click" class="btn btn-primary my-2">Send Click Event</a><br>
+            <a href="#" class="btn btn-primary my-2">Send Product Impression Event</a><br>
+            <a href="#" class="btn btn-primary my-2">Send Product Click Event</a><br>
+            <a href="#" class="btn btn-primary my-2">Send Add to Cart Event</a><br>
+            <a href="#" id="send-purchase" class="btn btn-primary my-2">Send Purchase Event</a><br>
+          </p>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="{{ url_for('static',filename='scripts/main.js') }}"></script>
+  </body>
+</html>
